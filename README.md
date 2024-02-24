@@ -4,6 +4,7 @@
 
 ```
 $ git clone https://github.com/haydenji0731/libqfml-debug.git --recursive
+$ cd libqfml-debug
 $ mkdir build && cd build
 $ cmake ..
 $ make
