@@ -1,3 +1,0 @@
-/Users/haydenji/Desktop/Work/projects/libqfml-debug/src/CMakeFiles/rtree_parser.dir
-/Users/haydenji/Desktop/Work/projects/libqfml-debug/src/CMakeFiles/edit_cache.dir
-/Users/haydenji/Desktop/Work/projects/libqfml-debug/src/CMakeFiles/rebuild_cache.dir

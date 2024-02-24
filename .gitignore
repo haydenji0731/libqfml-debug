@@ -1,3 +1,8 @@
 .idea/*.xml
 .idea/*.iml
 data/*
+src/CMakeCache.txt
+src/CMakeFiles/
+src/Makefile 
+src/cmake*
+build/*

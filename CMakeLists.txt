@@ -6,8 +6,6 @@ if (NOT DEFINED PLLMODULES_LIBPLL_PATH)
     set(PLLMODULES_LIBPLL_PATH "${CMAKE_CURRENT_SOURCE_DIR}/libs/libpll-2")
 endif()
 
-# Set BUILD_PLLMODULES_SHARED and BUILD_PLLMODULES_SHARED if both are unset
-# Use BUILD_SHARED_LIBS to decide whether we should build shared or static libraries
 if(NOT DEFINED BUILD_PLLMODULES_SHARED AND NOT DEFINED BUILD_PLLMODULES_STATIC)
     set(BUILD_PLLMODULES_SHARED ${BUILD_SHARED_LIBS})
     if (BUILD_SHARED_LIBS)
@@ -45,8 +43,5 @@ macro(add_pllmodules_lib target sources)
                 CACHE INTERNAL "${PROJECT_NAME}: Libraries to link against")
     endif()
 endmacro()
-
-
-add_subdirectory(src EXCLUDE_FROM_ALL)
 
 set(PLLMOD_EXPORTED_INCLUDE_PATH ${PLLMOD_EXPORTED_INCLUDE_PATH} ${PLL_EXPORTED_INCLUDE_PATH} PARENT_SCOPE)
