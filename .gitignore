@@ -6,3 +6,4 @@ src/CMakeFiles/
 src/Makefile 
 src/cmake*
 build/*
+.DS_Store
