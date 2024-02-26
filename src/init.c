@@ -62,7 +62,7 @@ void resize_cmat_horiz(unsigned int*** cmat, size_t n_row, size_t* n_col) {
     if (*cmat != NULL) {
         *n_col = n_col_new;
     } else {
-        perror("failed resize operation.");
+        perror("(resize_cmat_vert) failed resize operation");
         exit(1);
     }
 }
@@ -73,7 +73,7 @@ void resize_cmat_vert(unsigned int*** cmat, size_t* n_row, size_t n_col) {
     if (*cmat != NULL) {
         *n_row = n_row_new;
     } else {
-        perror("failed resize operation.");
+        perror("(resize_cmat_vert) failed resize operation");
         exit(1);
     }
 }
@@ -167,8 +167,8 @@ int main(int argc, char * argv[]) {
         for (int i = 1; i < idx; ++i) {
             unsigned int site = atoi(tokens[i] + 2);
             cmat[cell_idx][i] = site;
-            printf("%s", tokens[i]);
-            printf("\t%d\n", cmat[cell_idx][i]);
+            printf("Original allele info: %s\n", tokens[i]);
+            printf("Stored allele value: %d\n", cmat[cell_idx][i]);
         }
 
 
