@@ -15,7 +15,7 @@ endif()
 add_executable(rtree_parser rtree_parser.c)
 target_link_libraries(rtree_parser ${PLL_LIBRARY})
 
-add_executable(init init.c)
+add_executable(init init.c init.h map.c)
 target_link_libraries(init ${PLL_LIBRARY})
 
 link_directories(${CMAKE_SOURCE_DIR}/../build/libs/libpll-2/src)
